@@ -1,4 +1,4 @@
-public class Validador {
+public class ValidadorEnteros {
     public boolean buscarError (String opcion, int valorMaximo) {
         boolean error = false;
         try {

@@ -4,7 +4,7 @@ public class Registrador {
     public Luchador registrar () {
         boolean error = false;
         Scanner scanner = new Scanner(System.in);
-        Validador val = new Validador();
+        ValidadorEnteros val = new ValidadorEnteros();
         Luchador nuevoLuchador = new Luchador();
         System.out.print("Nombre: ");
         String nombre = scanner.nextLine();
