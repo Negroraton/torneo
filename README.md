@@ -108,7 +108,7 @@ Vegeta         Yudoka           9             10             8
 Para crear esta lista puede ser muy util el uso de tabuladores, de esta manera:
 
 ```java
-System.out.println(Nombre\t\tTipo\t\tFuerza\t\tResistencia\t\tDestreza);
+System.out.println("Nombre\t\tTipo\t\tFuerza\t\tResistencia\t\tDestreza");
 for(Peleador peleador: peleadores){
   System.out.println(peleador.getNombre() + "\t\t" +peleador.getTipo() +"\t\t" + peleador.getFuerza() 
   + "\t\t" + peleador.getResistencia() + "\t\t" peleador.getDestreza());
