@@ -24,7 +24,7 @@ public class Main {
             if (opcion.equals("1")) {
                 Registrador reg = new Registrador();
                 Luchador nuevoLuchador = reg.registrar();
-                listaluchadores.put(nuevoLuchador.nombre.toUpperCase(), nuevoLuchador);
+                listaluchadores.put(nuevoLuchador.getNombre().toUpperCase(), nuevoLuchador);
             }
             if (opcion.equals("2")) {
                 System.out.println("NOMBRE: ");
@@ -34,8 +34,8 @@ public class Main {
             if (opcion.equals("3")) {
                 System.out.println("Nombre\t\tTipo\t\tFuerza\t\tResistencia\t\tDestreza");
                 for (Luchador luchador : listaluchadores.values()) {
-                    System.out.println(luchador.nombre + "\t\t" + luchador.tipo + "\t\t" + luchador.fuerza
-                        + "\t\t" + luchador.resistencia + "\t\t" + luchador.destreza);
+                    System.out.println(luchador.getNombre() + "\t\t" + luchador.getTipo() + "\t\t" + luchador.getFuerza()
+                        + "\t\t" + luchador.getResistencia() + "\t\t" + luchador.getDestreza());
                 }
             }
 
